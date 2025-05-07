@@ -3,5 +3,6 @@ An end-to-end PDF-based Q&amp;A system
 
 Will be updated soon!
 
-![image](https://github.com/user-attachments/assets/57d78c58-c079-41cc-a0a3-e923a1478ba2)
+Here is an example screenshot from Ali's AI chatbot GUI:
+![image](https://github.com/user-attachments/assets/5685685f-ef0b-40b8-8e61-6ee0a3e27c83)
 
