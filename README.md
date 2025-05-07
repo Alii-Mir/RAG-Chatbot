@@ -1,8 +1,9 @@
 # Software Environment:
 
-![Example](https://github.com/user-attachments/assets/5d608cfb-f7a5-407e-b0e9-9067eb454f82)
+<!-- ![image](https://github.com/user-attachments/assets/5685685f-ef0b-40b8-8e61-6ee0a3e27c83) -->
 
 
+<kbd> <img src="https://github.com/user-attachments/assets/5685685f-ef0b-40b8-8e61-6ee0a3e27c83" /> </kbd>
 
 # 📚 PDF Q&A System with Groq Streaming LLM API
 
