@@ -2,8 +2,12 @@
 
 <!-- ![image](https://github.com/user-attachments/assets/5685685f-ef0b-40b8-8e61-6ee0a3e27c83) -->
 
-
+Example 1:
 <kbd> <img src="https://github.com/user-attachments/assets/5685685f-ef0b-40b8-8e61-6ee0a3e27c83" /> </kbd>
+
+Example 2:
+<kbd> <img src="https://github.com/user-attachments/assets/099e3175-1e91-4d03-b8d7-38f9b896b791" /> </kbd>
+
 
 # 📚 PDF Q&A System with Groq Streaming LLM API
 
