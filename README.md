@@ -42,19 +42,19 @@ The system operates through a streamlined pipeline that transforms raw PDF data 
    Uploaded PDFs are parsed using `PyPDFLoader`, with `PyPDF2` validating and extracting text from each page.
 
 2. **Text Chunking**  
-   The extracted text is divided into manageable chunks using `RecursiveCharacterTextSplitter` (chunk size: 800, overlap: 100), preserving context across segments.
+   The extracted text is divided into manageable chunks using **LangChain** (`RecursiveCharacterTextSplitter` function) (chunk size: 800, overlap: 100), preserving context across segments.
 
 3. **Embedding Generation**  
-   Each chunk is converted into a vector representation using the `intfloat/e5-large-v2` sentence transformer model. These embeddings are computed on the available device (CPU or CUDA) for flexibility and speed.
+   Each chunk is converted into a vector representation using the `intfloat/e5-large-v2` **sentence transformer** + **HuggingFaceEmbeddings** model. These embeddings are computed on the available device (CPU or CUDA) for flexibility and speed.
 
 4. **Vector Storage**  
-   The embeddings are indexed in a FAISS vector database, optimized for fast similarity searches across high-dimensional data.
+   The embeddings are indexed in a **FAISS** vector database, optimized for fast similarity searches across high-dimensional data.
 
 5. **Question Processing**  
    When a user submits a question, it is embedded using the same `intfloat/e5-large-v2` model. A similarity search identifies the most relevant chunks from the vector store.
 
 6. **Answer Generation**  
-   The retrieved chunks, along with the user's question, are sent to Groq's LLM via the streaming API. The LLM crafts an answer based solely on the provided context, ensuring fidelity to the document content.
+   The retrieved chunks, along with the user's question, are sent to **Groq**'s LLM (like `meta-llama/llama-4-scout-17b-16e-instruct`) via the streaming API. The LLM crafts an answer based solely on the provided context, ensuring fidelity to the document content.
 
 ---
 
